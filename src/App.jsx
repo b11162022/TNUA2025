@@ -8,6 +8,15 @@ import { ReactP5Wrapper } from "@p5-wrapper/react";
 function App() {
   const [count, setCount] = useState(0)
 
+    function setup() {
+        createCanvas(400, 400);
+        background(255);
+    }
+
+    function draw() {
+        circle(mouseX, mouseY, 80);
+    }
+
   return (
     <>
       <div>
